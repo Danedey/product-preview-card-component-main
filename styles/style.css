@@ -30,7 +30,7 @@
     --Cream: hsl(30, 38%, 92%);
     --White: hsl(0, 0%, 100%);
 }
-
+/*share rules */
 body{
     font-size: 0.875rem;
 }
@@ -38,3 +38,33 @@ body{
 .attribution{
     display: none;
 }
+
+.perfume-article p, .perfume-article button, .perfume-article s{
+    font-family: "Montserrat", sans-serif;
+    color: var(--Grey);
+}
+.perfume-article h1, .perfume-article .new-price{
+    font-family: "Fraunces", serif;
+}
+
+/*individual rules */
+
+.perfume-article .article-topic{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.perfume-article .new-price{
+    font-size: 1.5rem;
+    color: var(--Green500) ;
+    font-weight: 750;
+}
+
+.perfume-article button{
+    font-weight: 750;
+    color: var(--White);
+    background-image: url("../images/icon-cart.svg");
+    background-repeat: no-repeat;
+    padding-left: 1rem;
+}
+
