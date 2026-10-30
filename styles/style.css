@@ -25,17 +25,10 @@
 
 /* to do
 
-
--continue with layout and spacing
-
-
-
---add borders
-
 -- try diferent screen sizes to 1440px wide
-
+--- make the article certer the body
+--- eliminated bottom space in the img grid fraction /
 */
-
 :root{
     --Green500: hsl(158, 36%, 37%);
     --Green700: hsl(158, 42%, 18%);
@@ -94,6 +87,8 @@ body{
     margin: 0;
 }
 
+
+
 .perfume-article img{
     max-width: 100%;
     margin-bottom: 0.5rem;
@@ -121,6 +116,13 @@ body{
     font-weight: 750;
     text-decoration: none;
     
+}
+
+.perfume-article .information-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;  
+
 }
 
 .perfume-article .price-container{
