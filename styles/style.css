@@ -152,3 +152,27 @@ body{
     margin: 0 auto;
 }
 
+
+@media  screen and (width >= 1440px) {
+    .perfume-article{
+        width: 50rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body{
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    main{
+        width: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
