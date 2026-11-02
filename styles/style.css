@@ -24,10 +24,12 @@
 
 
 /* to do
-
+--match font sizes with desktop desing
 -- try diferent screen sizes to 1440px wide
---- make the article certer the body
---- eliminated bottom space in the img grid fraction /
+
+---space between shopping card and text inside button
+--- font responsivness
+
 */
 :root{
     --Green500: hsl(158, 36%, 37%);
@@ -156,7 +158,7 @@ body{
 
 @media  screen and (width >= 1440px) {
     .perfume-article{
-        width: 50rem;
+        width: 50.5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 0;
@@ -166,6 +168,8 @@ body{
         margin: 0;
         border-top-right-radius: 0;
         border-bottom-left-radius: 0.5rem;
+        max-width: none;
+        width: 25rem;
     }
     .perfume-article source{
         height: 0;
@@ -185,5 +189,60 @@ body{
         justify-content: center;
         align-items: center;
     }
+    .perfume-article .information-section{
+        margin-top: 2.6rem;
+    }
+
+    .perfume-article .article-topic{
+        font-size: 0.9rem;
+    }
+    .perfume-article header{
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+        padding: 0 2.8rem;
+        margin: 0;
+        gap: 1.2rem;
+    }
+
+    .perfume-article h1{
+        line-height: 2.6rem;
+        font-size: 2.7rem;
+    }
+
+    .perfume-article header p:not(.article-topic){
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        padding-right: 0;
+       
+    }
+
+    .perfume-article .article-section{
+        padding: 0 2.8rem;
+        margin: 0;
+    }
+
+    .perfume-article .price-container{
+        gap: 1.6rem;
+        margin-top: 1.3rem;
+    }
+
+    .perfume-article .new-price{
+        font-size: 2.7rem;
+    }
+
+    .perfume-article .old-price{
+        font-size: 1.1rem;
+    }
+
+    .perfume-article button{
+        margin: 0.4rem auto 0 auto;
+        height: 4.1rem;
+        width: 100%;
+        background-position: center left 5.5rem;
+        background-size: 1.3rem;
+    }
+
+
 }
 
