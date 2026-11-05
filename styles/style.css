@@ -28,8 +28,6 @@
 -- try diferent screen sizes to 1440px wide
 
 ---space between shopping card and text inside button
---- font responsivness
----- writting down every font size from the mobile design and then fing a their match with desktop design
 
 */
 :root{
@@ -71,7 +69,7 @@ body{
 }
 
 .perfume-article h1{
-    font-size: 2.3rem;
+    font-size: clamp(2.3rem, calc(2.15915rem + 0.03756vw), 2.7rem);
     padding-right: 1rem;
     line-height: 2.3rem;
 }
@@ -103,19 +101,19 @@ body{
 .perfume-article .article-topic{
     text-transform: uppercase;
     letter-spacing: 0.5rem;
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, calc(0.76479rem + 0.13146vw), 0.9rem);
     font-weight: 500;
 }
 
 .perfume-article header p:not(.article-topic){
     line-height: 1.5rem;
-    font-size: 1rem;
+    font-size: clamp(1rem, calc(0.92958rem + 0.26291vw), 1.2rem);
     font-weight: 450;
     padding-right: 1rem;
 }
 
 .perfume-article .new-price{
-    font-size: 2.4rem;
+    font-size: clamp(2.4rem, calc(2.29437rem + 0.39437vw), 2.7rem);
     color: var(--Green500) ;
     font-weight: 750;
     text-decoration: none;
@@ -143,7 +141,7 @@ body{
 
 .perfume-article button{
     font-weight: 600;
-    font-size: 1rem;
+    font-size: clamp(1rem, calc(0.92958rem + 0.26291vw), 1.2rem);
     color: var(--White);
     background-image: url("../images/icon-cart.svg");
     background-repeat: no-repeat;
@@ -206,12 +204,10 @@ body{
 
     .perfume-article h1{
         line-height: 2.6rem;
-        font-size: 2.7rem;
     }
 
     .perfume-article header p:not(.article-topic){
         line-height: 1.8rem;
-        font-size: 1.2rem;
         margin-top: 1rem;
         padding-right: 0;
        
@@ -227,10 +223,7 @@ body{
         margin-top: 1.3rem;
     }
 
-    .perfume-article .new-price{
-        font-size: 2.7rem;
-    }
-
+    
     .perfume-article .old-price{
         font-size: 1.1rem;
     }
@@ -242,7 +235,6 @@ body{
         background-position: center left 5.5rem;
         background-size: 1.3rem;
         padding-left: 3.3rem;
-        font-size: 1.2rem;
     }
 
 
