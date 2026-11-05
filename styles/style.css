@@ -29,6 +29,7 @@
 
 ---space between shopping card and text inside button
 --- font responsivness
+---- writting down every font size from the mobile design and then fing a their match with desktop design
 
 */
 :root{
@@ -198,7 +199,6 @@ body{
     }
     .perfume-article header{
         line-height: 1.8rem;
-        font-size: 1.2rem;
         padding: 0 2.8rem;
         margin: 0;
         gap: 1.2rem;
