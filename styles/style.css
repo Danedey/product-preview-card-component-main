@@ -155,7 +155,7 @@ body{
 }
 
 
-@media  screen and (width >= 1440px) {
+@media  screen and (width >= 712px) {
     .perfume-article{
         width: 50.5rem;
         display: grid;
