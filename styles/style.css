@@ -153,6 +153,10 @@ body{
     border-radius: 0.5rem;
 }
 
+.perfume-article button:hover,.perfume-article button:focus{
+    background-color: var(--Green700);
+} 
+
 
 @media  screen and (width >= 712px) {
     .perfume-article{
